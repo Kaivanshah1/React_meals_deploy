@@ -40,7 +40,7 @@ const Mealform = (props) => {
         }}
       />
       <button className={classes.button}>+ Add</button>
-      {!amountIsValid && <p>Enter valid amount from (1-5)</p>};
+      {!amountIsValid && <p>Enter valid amount from (1-5)</p>}
     </form>
   );
 };
