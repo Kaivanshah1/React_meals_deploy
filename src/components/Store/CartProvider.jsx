@@ -34,13 +34,13 @@ const cartReducer = (state, action) => {
       totalAmount: updateTotalAmount,
     };
   }
-    if (action.type === "REMOVE") {
-      const updateTotalAmount = state.totalAmount - existingItem.price
+  if (action.type === "REMOVE") {
+    const updateTotalAmount = state.totalAmount - existingItem.price;
 
-      const existingCartItemIndex = state.item.findIndex(
-          (id) => id === action.id
-      );
-    }
+    const existingCartItemIndex = state.item.findIndex(
+      (id) => id === action.id
+    );
+  }
 
   return initialState;
 };
